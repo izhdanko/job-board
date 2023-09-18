@@ -67,6 +67,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
 gem "devise"
 gem "bulma-rails"
 gem "sidekiq"
@@ -80,4 +81,8 @@ group :development, :test do
   gem "better_errors"
   gem "guard"
   gem "guard-livereload"
+end
+
+group :production do
+  gem 'pg'
 end
